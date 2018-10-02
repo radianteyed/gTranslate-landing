@@ -74,7 +74,8 @@ h4 {
       .header__decor {
         display: block;
         width: 8rem;
-        height: auto; }
+        height: auto;
+        z-index: -5; }
         .header__decor--right {
           position: absolute;
           right: 5%;
@@ -272,10 +273,8 @@ h4 {
   text-align: center; }
   .endOfChoice__decor {
     width: 7rem;
-    height: auto; }
-    @media (max-width: 56.25em) {
-      .endOfChoice__decor {
-        overflow-clip-box: hidden; } }
+    height: auto;
+    z-index: -5; }
     .endOfChoice__decor--right {
       position: absolute;
       right: 30%; }
