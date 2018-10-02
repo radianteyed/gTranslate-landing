@@ -1,0 +1,476 @@
+@import "mixins";
+@import "grid";
+
+
+
+
+
+
+
+$color-1-dark: #092845;
+$color-1-light: #0046BB;
+$color-white: #eee;
+$color-black: #202124;
+$color-gray: #5f6368;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+
+   
+
+    @include respond (bigDesktop) {
+        font-size: 80%;
+    }
+
+
+}
+
+body {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+    line-height: 1.7;
+    font-weight: 400;
+    color: $color-gray;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Raleway, Lato, sans-serif;
+    color: $color-black;
+}
+
+.header {
+    height: 70vh;
+    padding-top: 6rem;
+
+    &__text {
+
+        padding-top: 5rem;
+        margin-left: 10rem;
+        display: block;
+
+
+        @include respond (tablet) {
+            margin-left:0;
+            padding:1rem;
+        }
+        &--main {
+            font-size: 2rem;
+        }
+
+        &--p {
+            padding-top: 1rem;
+            font-size: 1.5rem;
+            font-weight: 400;
+
+        }
+    }
+
+
+
+    &__img {
+        display: block;
+        width: 60%;
+        height: auto;
+        transition: all 0.3s;
+
+        @include respond(tablet) {
+            margin: 0 auto;
+        }
+
+        &:hover {
+            transform: scale(1.08) translateY(-1rem);
+        }
+    }
+
+
+
+
+}
+
+.btn {
+
+    margin-top: 3rem;
+
+    &,
+    &:link,
+    &:visited {
+        background: $color-1-light;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.2rem 3rem;
+        display: inline-block;
+        border-radius: 3px;
+
+        font-size: 1.2rem;
+        color: white;
+
+        background: -webkit-gradient(linear, left top, right top, color-stop(50%, $color-1-light), color-stop(50%, $color-1-dark));
+
+        background: linear-gradient(to right, $color-1-light 50%, $color-1-dark 50%);
+        background-position: 0;
+        background-size: 200%;
+        transition: all 0.5s;
+
+
+
+    }
+
+    &:hover {
+        background-position: -100%;
+        -webkit-box-shadow: 0 1rem 2rem rgba($color-black, .2);
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+    }
+
+
+}
+
+.listOfFeatures {
+
+    margin-left: 3rem;
+    margin-right: 3rem;
+
+    .feature {
+        font-size: 1.2rem;
+        padding: 2rem;
+        text-align: center;
+        border-radius: 3px;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+
+
+
+        &__icon {
+            display: inline-block;
+            font-size: 2rem;
+            padding-bottom: 2rem;
+            background-image: -webkit-gradient(linear, left top, right top, from($color-1-dark), to($color-1-light));
+            background-image: linear-gradient(to right, $color-1-dark, $color-1-light);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+
+            @include respond(tablet) {
+                font-size: 3rem;
+                background-image:none;
+                color: $color-white;
+
+                
+            }
+
+        }
+
+        &:hover {
+            transform: scale(1.08) translateY(-1rem);
+        }
+
+        @include respond (tablet) {
+
+            margin-top: 2rem;
+             color: $color-white;
+             font-size: 1.4rem;
+            
+
+             &--heading {
+                 color: $color-white;
+                 letter-spacing: .2rem;
+             }
+
+            &--1 {
+                
+                background: #0094FF;
+               
+            }
+
+            &--2 {
+
+                background: #0085E5;
+
+            }
+            &--3 {
+
+                background: #004A7F;
+
+            }
+        }
+
+    }
+}
+
+.speakWorld {
+    padding: 7rem 2rem;
+
+
+    &__text {
+        margin-left: 10rem;
+        padding-top: 6rem;
+        font-size: 1.3rem;
+        width: 70%;
+
+@include respond (tablet) {
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+        &--heading {
+            font-size: 1.9rem;
+
+
+        }
+
+        &--p {
+            padding-top: 1rem;
+        }
+
+
+    }
+
+
+    &__video {
+
+
+
+        &__btn,
+        &:link,
+        &:visited {
+            color: $color-1-light;
+            display: inline-block;
+            margin-top: 3rem;
+            padding: 2rem 3rem;
+            text-align: center;
+            background-color: rgba(238, 238, 238, 0.11);
+            border-radius: 3px;
+            box-shadow: 0 .2rem .8rem rgba($color-black, .1);
+            border: 0.5px solid $color-white;
+            text-decoration: none;
+            background: linear-gradient(to right, transparent 50%, $color-1-dark 50%);
+            background-position: 0;
+            background-size: 200%;
+            transition: all 0.5s;
+
+
+            &:before {
+                content: '\e6cf';
+                display: inline-block;
+                font-family: 'themify';
+                padding-right: 2rem;
+
+
+            }
+
+            &:hover {
+                background-position: -100%;
+                -webkit-box-shadow: 0 1rem 2rem rgba($color-black, .2);
+                box-shadow: 0 1rem 2rem rgba($color-black, .2);
+                color: white;
+            }
+
+        }
+
+
+
+    }
+
+
+
+
+
+    &__img {
+        max-width: 80%;
+        height: auto;
+    }
+
+}
+
+.yourChoise {
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    // :before {
+    //     position: absolute;
+    //     background-image: url(../img/Capture.png);
+    //     background-repeat: no-repeat;
+    //     background-size: 80%;
+    //     background-position: left;
+    // }
+
+
+
+
+    &__item {
+        font-size: 1.5rem;
+        padding: 4rem 2rem;
+        text-align: center;
+        background-color: rgba(238, 238, 238, 0.1);
+        border-radius: 3px;
+        box-shadow: 0 0 .8rem rgba($color-gray, .1);
+        border: 0.5px solid $color-white;
+        position: relative;
+        transition: all .4s;
+
+
+
+        &--p {
+            font-size: 1.2rem;
+            padding-top: 2rem;
+
+        }
+
+        &__icon-box {
+            width: 5rem;
+            height: 5rem;
+            background-size: contain;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+
+        &:hover {
+            transform: translateY(-2rem) scale(1.04);
+        }
+
+    }
+
+
+}
+
+.icon-1 {
+    background-image: url(../img/gps.svg);
+
+}
+
+.icon-2 {
+    background-image: url(../img/group.svg);
+
+}
+
+.icon-3 {
+    background-image: url(../img/website.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+
+}
+
+.endOfChoice {
+    margin: 3rem auto;
+    position: relative;
+   padding-bottom: 1rem;
+    text-align: center;
+   
+
+    &__decor {
+        width: 7rem;
+        height: auto;
+
+        @include respond (tablet) {
+            overflow-clip-box: hidden;
+        }
+
+        &--right {
+            position: absolute;
+            right: 30%;
+
+            @include respond (tablet) {
+                right: 10%;
+            }
+
+        }
+
+        &--left {
+             position: absolute;
+             left: 30%;
+
+             @include respond (tablet) {
+                 left: 10%;
+             }
+
+        }
+
+
+    }
+
+    
+
+    @include respond (tablet)  {
+        padding: 0;
+        
+    }
+
+
+    &__text {
+        padding-top: 3rem;
+
+        display: block;
+
+
+
+        &--main {
+            font-size: 2rem;
+
+            color: $color-black;
+            letter-spacing: .5rem;
+
+
+        }
+
+        &--p {
+
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: $color-black;
+            
+
+        }
+    }
+}
+
+.footer {
+    background: $color-black;
+    height: 8rem;
+
+    &__text {
+
+        text-align: center;
+        font-size: 1rem;
+        color: $color-gray;
+        padding: 1rem 8rem;
+
+
+
+
+
+        &--link {
+
+            &:link,
+            &:visited {
+                text-decoration: none;
+                color: $color-white;
+
+                display: inline-block;
+                transition: all 0.3s;
+            }
+
+            &:hover,
+            &:active {
+
+                color: $color-1-light;
+                transform: scale(1.1) rotate(2deg);
+                font-weight: 500;
+            }
+        }
+    }
+
+}
