@@ -68,6 +68,21 @@ h4 {
 .header {
   height: 70vh;
   padding-top: 6rem; }
+  .header__decor {
+    display: none; }
+    @media (max-width: 56.25em) {
+      .header__decor {
+        display: block;
+        width: 8rem;
+        height: auto; }
+        .header__decor--right {
+          position: absolute;
+          right: 5%;
+          top: 5%; }
+        .header__decor--left {
+          position: absolute;
+          left: 5%;
+          top: 5%; } }
   .header__text {
     padding-top: 5rem;
     margin-left: 10rem;
@@ -75,7 +90,7 @@ h4 {
     @media (max-width: 56.25em) {
       .header__text {
         margin-left: 0;
-        padding: 1rem; } }
+        padding: 2rem; } }
     .header__text--main {
       font-size: 2rem; }
     .header__text--p {
@@ -149,6 +164,8 @@ h4 {
         margin-top: 2rem;
         color: #eee;
         font-size: 1.4rem; }
+        .listOfFeatures .feature--1 {
+          margin-top: 6rem; }
         .listOfFeatures .feature--heading {
           color: #eee;
           letter-spacing: .2rem; }

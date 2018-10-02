@@ -3,10 +3,6 @@
 
 
 
-
-
-
-
 $color-1-dark: #092845;
 $color-1-light: #0046BB;
 $color-white: #eee;
@@ -52,6 +48,43 @@ h4 {
     height: 70vh;
     padding-top: 6rem;
 
+
+
+    &__decor {
+        display: none;
+
+        @include respond (tablet) {
+            display: block;
+            width: 8rem;
+            height: auto;
+
+            &--right {
+                position: absolute;
+                right: 5%;
+                top: 5%;
+
+                
+
+            }
+
+            &--left {
+                position: absolute;
+                left: 5%;
+                top: 5%;
+
+                
+
+            }
+        }
+        
+
+       
+
+        
+
+
+    }
+
     &__text {
 
         padding-top: 5rem;
@@ -60,8 +93,9 @@ h4 {
 
 
         @include respond (tablet) {
+
             margin-left:0;
-            padding:1rem;
+            padding:2rem;
         }
         &--main {
             font-size: 2rem;
@@ -176,6 +210,10 @@ h4 {
 
         @include respond (tablet) {
 
+           &--1 {
+               margin-top: 6rem;
+           }
+
             margin-top: 2rem;
              color: $color-white;
              font-size: 1.4rem;
@@ -202,6 +240,8 @@ h4 {
                 background: #004A7F;
 
             }
+
+            
         }
 
     }
@@ -296,13 +336,7 @@ h4 {
     padding-left: 3rem;
     padding-right: 3rem;
 
-    // :before {
-    //     position: absolute;
-    //     background-image: url(../img/Capture.png);
-    //     background-repeat: no-repeat;
-    //     background-size: 80%;
-    //     background-position: left;
-    // }
+    
 
 
 
