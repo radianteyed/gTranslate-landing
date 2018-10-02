@@ -411,7 +411,7 @@ h4 {
     &__decor {
         width: 7rem;
         height: auto;
-        z-index: -5;
+        z-index: -10;
 
         
 
@@ -424,6 +424,12 @@ h4 {
                 
             }
 
+              @include respond (phone) {
+                  right: 0;
+
+              }
+
+
         }
 
         &--left {
@@ -432,6 +438,10 @@ h4 {
 
              @include respond (tablet) {
                  left: 10%;
+             }
+             @include respond (phone) {
+                 left: 0;
+
              }
 
         }

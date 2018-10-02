@@ -274,19 +274,25 @@ h4 {
   .endOfChoice__decor {
     width: 7rem;
     height: auto;
-    z-index: -5; }
+    z-index: -10; }
     .endOfChoice__decor--right {
       position: absolute;
       right: 30%; }
       @media (max-width: 56.25em) {
         .endOfChoice__decor--right {
           right: 10%; } }
+      @media (max-width: 37.5em) {
+        .endOfChoice__decor--right {
+          right: 0; } }
     .endOfChoice__decor--left {
       position: absolute;
       left: 30%; }
       @media (max-width: 56.25em) {
         .endOfChoice__decor--left {
           left: 10%; } }
+      @media (max-width: 37.5em) {
+        .endOfChoice__decor--left {
+          left: 0; } }
   @media (max-width: 56.25em) {
     .endOfChoice {
       padding: 0; } }
