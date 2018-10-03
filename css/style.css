@@ -66,8 +66,7 @@ h4 {
   color: #202124; }
 
 .header {
-  height: 70vh;
-  padding-top: 6rem; }
+  padding: 6rem; }
   .header__decor {
     display: none; }
     @media (max-width: 56.25em) {
@@ -139,43 +138,38 @@ h4 {
   .listOfFeatures .feature {
     font-size: 1.2rem;
     padding: 2rem;
+    letter-spacing: .05rem;
     text-align: center;
     border-radius: 3px;
     -webkit-transition: all .3s;
-    transition: all .3s; }
+    transition: all .3s;
+    color: #eee; }
+    .listOfFeatures .feature--heading {
+      color: #eee;
+      letter-spacing: .3rem; }
+    .listOfFeatures .feature--1 {
+      background: #0072E5; }
+    .listOfFeatures .feature--2 {
+      background: #0055E5; }
+    .listOfFeatures .feature--3 {
+      background: #0045bb; }
     .listOfFeatures .feature__icon {
       display: inline-block;
-      font-size: 2rem;
+      font-size: 1.8rem;
       padding-bottom: 2rem;
-      background-image: -webkit-gradient(linear, left top, right top, from(#092845), to(#0046BB));
-      background-image: linear-gradient(to right, #092845, #0046BB);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent; }
-      @media (max-width: 56.25em) {
-        .listOfFeatures .feature__icon {
-          font-size: 3rem;
-          background-image: none;
-          color: #eee; } }
+      font-size: 3rem;
+      background-image: none;
+      color: #eee; }
     .listOfFeatures .feature:hover {
       -webkit-transform: scale(1.08) translateY(-1rem);
               transform: scale(1.08) translateY(-1rem); }
-    @media (max-width: 56.25em) {
-      .listOfFeatures .feature {
-        margin-top: 2rem;
-        color: #eee;
-        font-size: 1.4rem; }
-        .listOfFeatures .feature--1 {
-          margin-top: 6rem; }
-        .listOfFeatures .feature--heading {
-          color: #eee;
-          letter-spacing: .2rem; }
-        .listOfFeatures .feature--1 {
-          background: #0094FF; }
-        .listOfFeatures .feature--2 {
-          background: #0085E5; }
-        .listOfFeatures .feature--3 {
-          background: #004A7F; } }
+  @media (max-width: 56.25em) {
+    .listOfFeatures {
+      margin-top: 2rem;
+      color: #eee;
+      font-size: 1.4rem; }
+      .listOfFeatures--1 {
+        margin-top: 6rem; } }
 
 .speakWorld {
   padding: 7rem 2rem; }

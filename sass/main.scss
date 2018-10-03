@@ -45,8 +45,8 @@ h4 {
 }
 
 .header {
-    height: 70vh;
-    padding-top: 6rem;
+    
+    padding: 6rem ;
 
   
 
@@ -180,36 +180,56 @@ h4 {
     .feature {
         font-size: 1.2rem;
         padding: 2rem;
+        letter-spacing: .05rem;
         text-align: center;
         border-radius: 3px;
-        -webkit-transition: all .3s;
         transition: all .3s;
+        color: $color-white;
 
+        &--heading {
+            color: $color-white;
+            letter-spacing: .3rem;
+        }
+         &--1 {
+
+             background: #0072E5;
+
+         }
+
+         &--2 {
+
+             background: #0055E5;
+
+         }
+
+         &--3 {
+
+             background:#0045bb;
+
+         }
 
 
         &__icon {
             display: inline-block;
-            font-size: 2rem;
+            font-size: 1.8rem;
             padding-bottom: 2rem;
-            background-image: -webkit-gradient(linear, left top, right top, from($color-1-dark), to($color-1-light));
-            background-image: linear-gradient(to right, $color-1-dark, $color-1-light);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+           
+             font-size: 3rem;
+             background-image:none;
+             color: $color-white;
 
-            @include respond(tablet) {
-                font-size: 3rem;
-                background-image:none;
-                color: $color-white;
-
-                
-            }
-
+            
         }
 
-        &:hover {
-            transform: scale(1.08) translateY(-1rem);
-        }
+         
+
+         &:hover {
+             transform: scale(1.08) translateY(-1rem);
+         }
+
+ }
+
+        
 
         @include respond (tablet) {
 
@@ -222,33 +242,15 @@ h4 {
              font-size: 1.4rem;
             
 
-             &--heading {
-                 color: $color-white;
-                 letter-spacing: .2rem;
-             }
+             
 
-            &--1 {
-                
-                background: #0094FF;
-               
-            }
-
-            &--2 {
-
-                background: #0085E5;
-
-            }
-            &--3 {
-
-                background: #004A7F;
-
-            }
+            
 
             
         }
 
     }
-}
+
 
 .speakWorld {
     padding: 7rem 2rem;
@@ -346,6 +348,7 @@ h4 {
 
     &__item {
         font-size: 1.5rem;
+        
         padding: 4rem 2rem;
         text-align: center;
         background-color: rgba(238, 238, 238, 0.1);
@@ -360,6 +363,7 @@ h4 {
         &--p {
             font-size: 1.2rem;
             padding-top: 2rem;
+            
 
         }
 
